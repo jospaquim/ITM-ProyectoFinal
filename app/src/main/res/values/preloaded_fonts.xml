@@ -4,5 +4,10 @@
         <item>@font/amiko_bold</item>
         <item>@font/arbutus</item>
         <item>@font/arbutus_slab</item>
+        <item>@font/gentium_basic_bold</item>
+        <item>@font/nunito_sans</item>
+        <item>@font/nunito_sans_bold</item>
+        <item>@font/nunito_sans_semibold</item>
+        <item>@font/yeseva_one</item>
     </array>
 </resources>
