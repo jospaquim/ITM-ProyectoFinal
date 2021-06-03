@@ -15,8 +15,8 @@
     <color name="bg_color">#FFFFFF</color>
     <color name="title_txt_color">#0E3854</color>
     <color name="bton_inicio">#f58634</color>
-
-
+    <color name="bton_app"> #45BA73</color>
+    <color name="tono_green">#7ED321</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="gray">#ACABAB</color>
