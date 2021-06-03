@@ -8,12 +8,14 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewreg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="55dp" />
+        tools:layout_editor_absoluteY="0dp"
+        android:scrollbars = "vertical"
+        />
 
     <Button
         android:id="@+id/btn_regresar_register"
@@ -31,13 +33,13 @@
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toTopOf="@+id/textViewreg" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/enunsolopaso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -47,8 +49,8 @@
         android:text="@string/registerconrrss"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
         app:layout_constraintTop_toBottomOf="@+id/btn_regresar_register" />
 
     <Button
@@ -58,8 +60,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:text="@string/fb"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
 
     <Button
         android:id="@+id/btn_login_g"
@@ -68,13 +70,13 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:text="@string/google"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btn_login_fb"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/contucorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -86,9 +88,9 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintStart_toStartOf="@+id/textViewreg"
+        app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
 
 
         <EditText
@@ -107,9 +109,9 @@
             android:inputType="number"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+            app:layout_constraintStart_toStartOf="@+id/textViewreg"
+            app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
 
         <EditText
             android:id="@+id/userName"
@@ -129,7 +131,7 @@
             android:paddingEnd="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.427"
-            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textViewreg"
             app:layout_constraintTop_toBottomOf="@+id/userDNI" />
 
         <EditText
@@ -148,8 +150,8 @@
             android:inputType="textPersonName"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+            app:layout_constraintStart_toStartOf="@+id/textViewreg"
             app:layout_constraintTop_toBottomOf="@+id/userName" />
 
         <EditText
@@ -232,9 +234,9 @@
             android:inputType="textPassword"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
             app:layout_constraintHorizontal_bias="0.8"
-            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textViewreg"
             app:layout_constraintTop_toBottomOf="@+id/et_userMail_register" />
 
         <EditText
@@ -254,7 +256,7 @@
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textViewreg"
             app:layout_constraintTop_toBottomOf="@+id/et_userPassword_register" />
 
         <Button
@@ -270,8 +272,8 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+            app:layout_constraintStart_toStartOf="@+id/textViewreg"
             app:layout_constraintTop_toBottomOf="@+id/et_ConfirmPassword_register" />
 
         <TextView
@@ -283,8 +285,8 @@
             android:layout_marginEnd="30dp"
             android:gravity="center"
             android:text="@string/concuenta"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+            app:layout_constraintStart_toStartOf="@+id/textViewreg"
             app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
 
