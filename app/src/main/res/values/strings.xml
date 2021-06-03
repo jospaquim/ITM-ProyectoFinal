@@ -8,8 +8,8 @@
     <string name="et_pass_login">Ingresa tu contraseña</string>
     <string name="et_confpass_login">Confirma tu contraseña</string>
     <string name="intro_pregunta">¿Con que tipo de usuario te identificas?</string>
-    <string name="comprador">Soy comprador</string>
-    <string name="agricultor">Soy Agricultor</string>
+    <string name="soycomprador">Soy comprador</string>
+    <string name="soyagricultor">Soy Agricultor</string>
 
 
     <string name="et_number">Ingresa tu número de celular</string>
