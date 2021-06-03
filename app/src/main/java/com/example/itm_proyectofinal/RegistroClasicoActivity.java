@@ -1,6 +1,7 @@
 package com.example.itm_proyectofinal;
 
 import android.annotation.SuppressLint;
+import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -10,6 +11,7 @@ import android.os.PersistableBundle;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,6 +50,15 @@ public class RegistroClasicoActivity extends AppCompatActivity {
         pass2=(EditText)findViewById(R.id.et_ConfirmPassword_register);
         btnLogin=(Button) findViewById(R.id.btn_login);
         inicio=(TextView) findViewById(R.id.et_register_login);
+
+
+        date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDatePickerDialog();
+
+            }
+        });
 
         inicio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,6 +141,38 @@ public class RegistroClasicoActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void showDatePickerDialog() {
+        DatePickerFragment newFragment = DatePickerFragment.newInstance(new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                // +1 because January is zero
+                final String selectedDate = twoDigits(day) + "/" + twoDigits(month+1) + "/" + year;
+                String d1= year+"-"+twoDigits(month+1)+"-"+twoDigits(day);
+                String fecha_act= obtenerFechaConFormato("YYYY-MM-dd","America/Lima");
+                //int anio_act=  Integer.valueOf(fecha_act.split("-")[0]);
+
+                int diferencia= Integer.valueOf(fecha_act.split("-")[0])- Integer.valueOf(d1.split("-")[0]);
+
+
+                if (fecha_act.compareTo(d1)<0){
+                    Toast.makeText(getApplicationContext(),"La fecha seleccionada es una fecha futura",Toast.LENGTH_LONG).show();
+                }else{
+                    if (diferencia<18){
+                        Toast.makeText(getApplicationContext(),"TIENE MENOS DE 18 AÑOS",Toast.LENGTH_LONG).show();
+                    }else{
+                        date.setText(selectedDate);
+                    }
+                }
+            }
+        });
+
+        newFragment.show(getSupportFragmentManager(), "datePicker");
+    }
+
+    private String twoDigits(int n) {
+        return (n<=9) ? ("0"+n) : String.valueOf(n);
     }
 
     @SuppressLint("SimpleDateFormat")
