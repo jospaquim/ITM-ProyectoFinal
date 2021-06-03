@@ -149,7 +149,22 @@ public class RegistroClasicoActivity extends AppCompatActivity {
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 // +1 because January is zero
                 final String selectedDate = twoDigits(day) + "/" + twoDigits(month+1) + "/" + year;
-                date.setText(selectedDate);
+                String d1= year+"-"+twoDigits(month+1)+"-"+twoDigits(day);
+                String fecha_act= obtenerFechaConFormato("YYYY-MM-dd","America/Lima");
+                //int anio_act=  Integer.valueOf(fecha_act.split("-")[0]);
+
+                int diferencia= Integer.valueOf(fecha_act.split("-")[0])- Integer.valueOf(d1.split("-")[0]);
+
+
+                if (fecha_act.compareTo(d1)<0){
+                    Toast.makeText(getApplicationContext(),"La fecha seleccionada es una fecha futura",Toast.LENGTH_LONG).show();
+                }else{
+                    if (diferencia<18){
+                        Toast.makeText(getApplicationContext(),"TIENE MENOS DE 18 AÑOS",Toast.LENGTH_LONG).show();
+                    }else{
+                        date.setText(selectedDate);
+                    }
+                }
             }
         });
 

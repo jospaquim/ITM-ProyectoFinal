@@ -7,11 +7,13 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#00AF91"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_dialog"
@@ -54,8 +56,9 @@
         android:layout_width="match_parent"
         android:layout_height="189dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="70dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/shape_cards"
         android:drawableTop="@drawable/comprador"
         android:fontFamily="@font/nunito_sans_bold"
@@ -64,6 +67,7 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="@+id/textView13"
         app:layout_constraintStart_toStartOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/btnUserAgri" />
