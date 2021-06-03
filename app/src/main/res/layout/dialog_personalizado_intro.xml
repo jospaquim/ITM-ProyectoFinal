@@ -7,12 +7,11 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#00AF91"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/gentium_basic_bold"
         android:gravity="center"
@@ -38,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="189dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/shape_cards"
         android:drawableTop="@drawable/granjero"
@@ -57,8 +56,9 @@
         android:layout_width="match_parent"
         android:layout_height="189dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="100dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/shape_cards"
         android:drawableTop="@drawable/comprador"
         android:fontFamily="@font/nunito_sans_bold"
@@ -67,6 +67,7 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView13"
         app:layout_constraintStart_toStartOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/btnUserAgri" />

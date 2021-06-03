@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Strings generales -->
-    <string name="app_name">Gamerty</string>
-    <!-- Conjunto de Strings para el View GameSpinner -->
-    <string-array name="Regiones">
+
+    <string-array name="Region">
         <item>Elija una región</item>
         <item>Amazonas</item>
         <item>Áncash</item>

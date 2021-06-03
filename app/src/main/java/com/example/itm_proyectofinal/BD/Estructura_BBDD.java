@@ -36,9 +36,6 @@ public class Estructura_BBDD {
             "DNI_cla VARCHAR(8) NOT NULL," +
             "fecha_naci_cla DATE NOT NULL ,"+
             "celular_cla VARCHAR(9) NOT NULL,"+
-            "provincia_cla VARCHAR(30) NOT NULL,"+
-            "distrito_cla VARCHAR(30) NOT NULL,"+
-            "direccion_cla TEXT NOT NULL,"+
             "coreo_cla TEXT NOT NULL,"+
             "password_cla TEXT NOT NULL,"+
             "fecha_registro_cla DATETIME NOT NULL)";
@@ -57,7 +54,7 @@ public class Estructura_BBDD {
             "direccion_agri TEXT NOT NULL,"+
             "descrip_cultivo_agri TEXT NOT NULL" +
             "tipo_agri VARCHAR(20) NOT NULL," +
-            "coreo_agri TEXT NOT NULL,"+
+            "correo_agri TEXT NOT NULL,"+
             "password_agri TEXT NOT NULL,"+
             "fecha_registro_agri DATETIME NOT NULL)";
 
