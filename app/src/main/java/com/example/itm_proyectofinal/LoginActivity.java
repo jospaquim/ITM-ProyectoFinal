@@ -65,12 +65,9 @@ public class LoginActivity extends AppCompatActivity {
                     } catch (Exception e){
                         e.printStackTrace();
                     }
-
-
-
-
                 }else{
                     Toast.makeText(getApplicationContext(),"Debe completar todos los campos",Toast.LENGTH_SHORT).show();
+
                 }
 
             }
