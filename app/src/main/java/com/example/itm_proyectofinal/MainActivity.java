@@ -7,8 +7,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,30 +34,56 @@ public class MainActivity extends AppCompatActivity {
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final CharSequence[] opciones= {"SI","NO"};
-                final AlertDialog.Builder alertOpciones= new AlertDialog.Builder(MainActivity.this);
-                alertOpciones.setTitle("¿Desea buscar el registro por correo?");
-                alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
+                mostrarDialogoPersonalizado();
+            }
+        });
+
+
+
+    }
+
+
+    public void mostrarDialogoPersonalizado(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
+        LayoutInflater inflater=getLayoutInflater();
+        View view=inflater.inflate(R.layout.dialog_personalizado_intro,null);
+        builder.setView(view);
+        final AlertDialog dialog=builder.create();
+        dialog.show();
+
+        TextView txt=view.findViewById(R.id.text_dialog);
+        txt.setText("¿QUÉ TIPO DE USUARIO ES?...");
+
+        Button btnUserAgri=view.findViewById(R.id.btnUserAgri);
+        btnUserAgri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j= new Intent(getApplicationContext(), RegistroAgricultorActivity.class);
+                startActivity(j);
+            }
+        });
+        Button btnUserClasic= view.findViewById(R.id.btnUserClasic);
+        btnUserClasic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k= new Intent(getApplicationContext(),RegistroClasicoActivity.class);
+                startActivity(k);
+            }
+        });
+
+        /*builder.setView(inflater.inflate(R.layout.dialog_personalizado_intro,null))
+                .setPositiveButton("USUARIO AGRICULTOR", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        if (opciones[which].equals("SI")){
-
-
-
-                        }else {
-                            if (opciones[which].equals("NO")){
-                                dialog.dismiss(); //cerrar el dialogo
-                            }
-                        }
+                        Intent j= new Intent(getApplicationContext(), RegistroAgricultorActivity.class);
+                        startActivity(j);
                     }
-                });
-                alertOpciones.show(); //Mostrar alerta
+                }).setNegativeButton("USUARIO CLASICO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent k= new Intent(getApplicationContext(),RegistroClasicoActivity.class);
+                startActivity(k);
             }
-        });
-
-            }
-        });
-
-
+        });*/
     }
 }
