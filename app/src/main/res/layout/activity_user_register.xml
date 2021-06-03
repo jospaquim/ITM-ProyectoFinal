@@ -187,6 +187,9 @@
             android:hint="@string/et_date"
             android:inputType="date"
             android:paddingStart="12dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:maxLines="1"
 
             android:paddingEnd="12dp"
             app:layout_constraintEnd_toEndOf="@+id/et_userMail_register"
