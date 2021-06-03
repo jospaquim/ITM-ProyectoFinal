@@ -9,7 +9,7 @@ import com.example.itm_proyectofinal.BD.Estructura_BBDD;
 
 public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "freshmarket.db";
+    public static final String DATABASE_NAME = "freshmarket.dbd";
 
     public SQLite_OpenHelper(Context context) {
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
