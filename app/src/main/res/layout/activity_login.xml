@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        android:id="@+id/btn_regresar_login"
+        android:id="@+id/btn_regresar_register"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/btn_regresar_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_regresar_register" />
 
     <Button
         android:id="@+id/btn_login_fb"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/et_userMail"
+        android:id="@+id/et_userMail_register"
         android:layout_width="351dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -100,6 +100,7 @@
         android:background="@drawable/custom_imput"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="12dp"
+        android:autofillHints="email"
         android:ems="10"
         android:hint="@string/et_email_login"
         android:inputType="textEmailAddress"
@@ -110,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/et_userPassword"
+        android:id="@+id/et_userPassword_register"
         android:layout_width="356dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -124,9 +125,10 @@
         android:inputType="textPassword"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
+        android:autofillHints="password"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/et_userMail" />
+        app:layout_constraintTop_toBottomOf="@+id/et_userMail_register" />
 
     <Button
         android:id="@+id/btn_login"
@@ -143,7 +145,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/et_userPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/et_userPassword_register" />
 
     <TextView
         android:id="@+id/et_register_login"
