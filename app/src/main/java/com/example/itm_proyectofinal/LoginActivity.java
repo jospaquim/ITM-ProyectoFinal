@@ -50,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
                         if (cursorClasico.getCount()>0){
                             Intent i= new Intent(getApplicationContext(),HomeClasicoActivity.class);
                             i.putExtra("SesionClasica",cursorClasico.getColumnIndex("id_us_cla"));
-
                             startActivity(i);
 
                         }else{
