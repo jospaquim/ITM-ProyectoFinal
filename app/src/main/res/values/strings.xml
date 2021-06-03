@@ -4,6 +4,14 @@
     <string name="descrip_slogan">Refresca tu vida, come orgánico</string>
     <string name="btn_register_intro">Empieza gratis</string>
     <string name="btn_login_intro">Ya tengo una cuenta</string>
+    <string name="et_email_login">Ingresa tu correo</string>
+    <string name="et_pass_login">Ingresa tu contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="fb">Facebook</string>
+    <string name="google">Google</string>
+    <string name="concorreo">O inicia sesión con tu correo</string>
+    <string name="sincuenta">¿No tienes cuenta? Regístrate</string>
+    <string name="loginconrrss">Inicia sesión en un sólo paso</string>
     <string name="home">HOME</string>
 
 
