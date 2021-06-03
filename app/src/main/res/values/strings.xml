@@ -6,6 +6,11 @@
     <string name="btn_login_intro">Ya tengo una cuenta</string>
     <string name="et_email_login">Ingresa tu correo</string>
     <string name="et_pass_login">Ingresa tu contraseña</string>
+    <string name="et_confpass_login">Confirma tu contraseña</string>
+
+    <string name="et_number">Ingresa tu número de celular</string>
+    <string name="et_date">Ingresa tu fecha de nacimiento</string>
+
     <string name="et_name">Ingresa tu nombre</string>
     <string name="et_DNI">Ingresa tu DNI</string>
     <string name="et_apellido">Ingresa tu apellido</string>

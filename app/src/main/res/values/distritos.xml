@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="limad">
+        <item>Elija una región</item>
+        <item>ANCÓN</item>
+        <item>ATE</item>
+        <item>BARRANCO</item>
+        <item>BREÑA</item>
+        <item>CARABAYLLO</item>
+        <item>CHACLACAYO</item>
+        <item>CHORRILLOS</item>
+        <item>CIENEGUILLA</item>
+        <item>COMAS</item>
+        <item>EL AGUSTINO</item>
+        <item>INDEPENDENCIA</item>
+        <item>JESÚS MARÍA</item>
+        <item>LA MOLINA</item>
+        <item>LA VICTORIA</item>
+        <item>LIMA</item>
+        <item>LINCE</item>
+        <item>LOS OLIVOS</item>
+        <item>LURIGANCHO-CHOSICA</item>
+        <item>LURÍN</item>
+        <item>MAGDALENA DEL MAR</item>
+        <item>MIRAFLORES</item>
+        <item>PACHACÁMAC</item>
+        <item>PUCUSANA</item>
+        <item>PUEBLO LIBRE</item>
+        <item>PUENTE PIEDRA</item>
+        <item>PUNTA HERMOSA</item>
+        <item>PUNTA NEGRA</item>
+        <item>RÍMAC</item>
+        <item>SAN BARTOLO</item>
+        <item>SAN BORJA</item>
+        <item>SAN ISIDRO</item>
+        <item>SAN JUAN DE LURIGANCHO</item>
+        <item>SAN JUAN DE MIRAFLORES</item>
+        <item>SAN LUIS</item>
+        <item>SAN MARTIN DE PORRES</item>
+        <item>SAN MIGUEL</item>
+        <item>SANTA ANITA</item>
+        <item>SANTA MARÍA DEL MAR</item>
+        <item>SANTA ROSA</item>
+        <item>SANTIAGO DE SURCO</item>
+        <item>SURQUILLO</item>
+        <item>VILLA EL SALVADOR</item>
+        <item>VILLA MARIA DEL TRIUNFO</item>
+    </string-array>
+</resources>
