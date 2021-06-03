@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         final AlertDialog dialog=builder.create();
         dialog.show();
 
-        TextView txt=view.findViewById(R.id.text_dialog);
-        txt.setText("¿QUÉ TIPO DE USUARIO ES?...");
+        //TextView txt=view.findViewById(R.id.text_dialog);
+        //txt.setText("¿QUÉ TIPO DE USUARIO ES?...");
 
         Button btnUserAgri=view.findViewById(R.id.btnUserAgri);
         btnUserAgri.setOnClickListener(new View.OnClickListener() {
