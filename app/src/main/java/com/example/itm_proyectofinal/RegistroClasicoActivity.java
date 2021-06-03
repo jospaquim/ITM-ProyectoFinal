@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
@@ -33,29 +34,30 @@ import javax.crypto.spec.SecretKeySpec;
 public class RegistroClasicoActivity extends AppCompatActivity {
     Button btnLogin;
     EditText eDni,name,apellido,celular,date,email,pass1,pass2;
-    TextView inicio;
+    TextView inicio,textViewreg;
     public static final String clave="gdsawr";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_register);
-        eDni=(EditText) findViewById(R.id.userDNI);
-        name=(EditText) findViewById(R.id.userName);
-        apellido=(EditText) findViewById(R.id.userLastName);
-        celular=(EditText) findViewById(R.id.etUserPhone);
-        date=(EditText) findViewById(R.id.etUserDate);
-        email=(EditText) findViewById(R.id.et_userMail_register);
-        pass1=(EditText)findViewById(R.id.et_userPassword_register);
-        pass2=(EditText)findViewById(R.id.et_ConfirmPassword_register);
-        btnLogin=(Button) findViewById(R.id.btn_login);
-        inicio=(TextView) findViewById(R.id.et_register_login);
+        eDni= findViewById(R.id.userDNI);
+        name= findViewById(R.id.userName);
+        apellido= findViewById(R.id.userLastName);
+        celular= findViewById(R.id.etUserPhone);
+        date= findViewById(R.id.etUserDate);
+        email= findViewById(R.id.et_userMail_register);
+        pass1=findViewById(R.id.et_userPassword_register);
+        pass2=findViewById(R.id.et_ConfirmPassword_register);
+        btnLogin= findViewById(R.id.btn_login);
+        inicio= findViewById(R.id.et_register_login);
 
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showDatePickerDialog();
+                textViewreg.setMovementMethod(new ScrollingMovementMethod());
 
             }
         });
