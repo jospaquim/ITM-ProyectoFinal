@@ -1,17 +1,9 @@
 <resources>
-    <string name="app_name"></string>
-    <string name="personal_info">Información Personal</string>
-
-    <string name="logout">Cerrar Sesión</string>
-    <string name="reset_pass">Reestablecer contraseñac</string>
-    <string name="name">Nombre</string>
-    <string name="email">Correo</string>
-    <string name="password">Contraseña</string>
-    <string name="confirm_pass">Confirmar contraseña</string>
-    <string name="resend">Reenviar OTP</string>
-    <string name="send_otp">Enviar OTP</string>
-    <string name="verify_your_mobile">Verifica tu número de celular</string>
-    <string name="mobile">Número de celular</string>
+    <string name="app_name">FreshMarket</string>
+    <string name="descrip_app">Salva la tierra, consume productos orgánicos del campo</string>
+    <string name="descrip_slogan">Refresca tu vida, come orgánico</string>
+    <string name="btn_register_intro">Empieza gratis</string>
+    <string name="btn_login_intro">Ya tengo una cuenta</string>
 
 
 
