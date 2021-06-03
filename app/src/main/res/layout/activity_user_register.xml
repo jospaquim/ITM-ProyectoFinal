@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="55dp" />
 
     <Button
         android:id="@+id/btn_regresar_register"

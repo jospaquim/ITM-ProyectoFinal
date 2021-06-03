@@ -1,6 +1,7 @@
 package com.example.itm_proyectofinal;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
