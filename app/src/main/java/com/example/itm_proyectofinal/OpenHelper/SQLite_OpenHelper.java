@@ -5,7 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.itm_proyectofinal.BD.Estructura;
+import com.example.itm_proyectofinal.BD.Estructura_BBDD;
 
 public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
@@ -17,13 +17,13 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(Estructura.SQL_CREATE_ENTRIES);
+        //db.execSQL();
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(Estructura.SQL_DELETE_ENTRIES);
-        onCreate(db);
+        /*db.execSQL(Estructura_BBDD.SQL_DELETE_ENTRIES);
+        onCreate(db);*/
     }
     public  void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion){
         onUpgrade(db,oldVersion,newVersion);
@@ -32,21 +32,21 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
         this.getWritableDatabase();
 
     }
-    public Cursor consultarUsuarios(String usu, String cla){
+    /*public Cursor consultarUsuarios(String usu, String cla){
         SQLiteDatabase db = this.getReadableDatabase();
         String[] projection = {
-                Estructura.NOMBRE_COLUMN2,
-                Estructura.NOMBRE_COLUMN3,
-                Estructura.NOMBRE_COLUMN4,
-                Estructura.NOMBRE_COLUMN5,
-                Estructura.NOMBRE_COLUMN6,
-                Estructura.NOMBRE_COLUMN7,
-                Estructura.NOMBRE_COLUMN8
+                Estructura_BBDD.NOMBRE_COLUMN2,
+                Estructura_BBDD.NOMBRE_COLUMN3,
+                Estructura_BBDD.NOMBRE_COLUMN4,
+                Estructura_BBDD.NOMBRE_COLUMN5,
+                Estructura_BBDD.NOMBRE_COLUMN6,
+                Estructura_BBDD.NOMBRE_COLUMN7,
+                Estructura_BBDD.NOMBRE_COLUMN8
 
         };
-        String selection = Estructura.NOMBRE_COLUMN6 + " like ? and " + Estructura.NOMBRE_COLUMN8 + " like ?";
+        String selection = Estructura_BBDD.NOMBRE_COLUMN6 + " like ? and " + Estructura_BBDD.NOMBRE_COLUMN8 + " like ?";
         String[] selectionArgs = {usu,cla};
-        Cursor c = db.query(Estructura.TABLE_NAME,
+        Cursor c = db.query(Estructura_BBDD.TABLE_NAME,
                 projection,
                 selection,
                 selectionArgs,
@@ -54,5 +54,5 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
                 null,
                 null);
         return c;
-    }
+    }*/
 }
