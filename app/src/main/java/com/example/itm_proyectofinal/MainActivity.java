@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-        btnIniciar= (Button) findViewById(R.id.btn_Login_Intro);
-        btnRegistrar=(Button) findViewById(R.id.btn_Register_Intro);
+        btnIniciar= findViewById(R.id.btn_Login_Intro);
+        btnRegistrar= findViewById(R.id.btn_Register_Intro);
 
         btnIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
 
         TextView txt=view.findViewById(R.id.text_dialog);
-        txt.setText("¿QUÉ TIPO DE USUARIO ES?...");
+        txt.setText("¿Con que tipo de usuario te identificas?");
 
         Button btnUserAgri=view.findViewById(R.id.btnUserAgri);
         btnUserAgri.setOnClickListener(new View.OnClickListener() {
