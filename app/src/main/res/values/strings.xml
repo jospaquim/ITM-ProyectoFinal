@@ -4,7 +4,7 @@
     <string name="descrip_slogan">Refresca tu vida, come orgánico</string>
     <string name="btn_register_intro">Empieza gratis</string>
     <string name="btn_login_intro">Ya tengo una cuenta</string>
-
+    <string name="home">HOME</string>
 
 
 </resources>
