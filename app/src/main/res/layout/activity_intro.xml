@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:font="@font/"
+
         android:fontFamily="@font/yeseva_one"
         android:fontWeight="800"
         android:gravity="center"
@@ -69,8 +69,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="25dp"
-        android:text="Empieza gratis"
         android:background="@drawable/buttons"
+        android:text="Empieza gratis"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

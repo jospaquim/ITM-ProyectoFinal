@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Market Fresh</string>
+    <string name="app_name"></string>
     <string name="personal_info">Información Personal</string>
 
     <string name="logout">Cerrar Sesión</string>
