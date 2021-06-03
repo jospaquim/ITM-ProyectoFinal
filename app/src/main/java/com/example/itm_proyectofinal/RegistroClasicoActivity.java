@@ -10,10 +10,13 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Base64;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,9 +35,10 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 public class RegistroClasicoActivity extends AppCompatActivity {
-    Button btnLogin;
+    Button btnLogin,regresar;
     EditText eDni,name,apellido,celular,date,email,pass1,pass2;
     TextView inicio,textViewreg;
+    ListView lst;
     public static final String clave="gdsawr";
 
     @Override
@@ -51,6 +55,18 @@ public class RegistroClasicoActivity extends AppCompatActivity {
         pass2=findViewById(R.id.et_ConfirmPassword_register);
         btnLogin= findViewById(R.id.btn_login);
         inicio= findViewById(R.id.et_register_login);
+        regresar=findViewById(R.id.btn_regresar_register);
+        //lst=(ListView) findViewById(R.id.list);
+
+
+
+        regresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+            }
+        });
 
 
         date.setOnClickListener(new View.OnClickListener() {

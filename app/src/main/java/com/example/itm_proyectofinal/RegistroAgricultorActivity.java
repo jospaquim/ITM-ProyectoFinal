@@ -26,7 +26,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class RegistroAgricultorActivity extends AppCompatActivity {
     EditText date,etDni,etNombre,etApellido,celular,provincia,distrito,direccion,descripcion,tipo,correo,pass1,pass2;
-    Button btnLogin;
+    Button btnLogin,regresar;
     TextView login;
 
     @Override
@@ -44,6 +44,15 @@ public class RegistroAgricultorActivity extends AppCompatActivity {
         direccion=(EditText) findViewById(R.id.etUserDireccion);
         btnLogin=(Button) findViewById(R.id.btn_login);
         login=(TextView) findViewById(R.id.et_register_login);
+        regresar=(Button) findViewById(R.id.btn_regresar_register);
+
+        regresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+            }
+        });
 
 
 

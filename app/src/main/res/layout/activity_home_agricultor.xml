@@ -25,6 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15">
 
         <ViewFlipper
+            android:id="@+id/vFlipper"
             android:layout_width="match_parent"
             android:layout_height="200dp"></ViewFlipper>
 
