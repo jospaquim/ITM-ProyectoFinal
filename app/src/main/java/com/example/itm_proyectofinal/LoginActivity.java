@@ -75,8 +75,10 @@ public class LoginActivity extends AppCompatActivity {
         registrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(getApplicationContext(),RegistroClasicoActivity.class);
+                Intent i = new Intent(getApplicationContext(),HomeAgricultorActivity.class);
                 startActivity(i);
+                //Intent i= new Intent(getApplicationContext(),RegistroClasicoActivity.class);
+                //startActivity(i);
             }
         });
 

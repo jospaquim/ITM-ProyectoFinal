@@ -5,6 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistroClasicoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
     <TextView
@@ -93,10 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
 
 
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
         <EditText
             android:id="@+id/userDNI"
             android:layout_width="match_parent"
@@ -288,11 +293,15 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:gravity="center"
+            android:paddingBottom="30dp"
             android:text="@string/concuenta"
             app:layout_constraintEnd_toEndOf="@+id/textViewreg"
             app:layout_constraintStart_toStartOf="@+id/textViewreg"
             app:layout_constraintTop_toBottomOf="@+id/btn_login" />
-    </ListView>
+
+    </LinearLayout>
+
+    </ScrollView>
 
 
 

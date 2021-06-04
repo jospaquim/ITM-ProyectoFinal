@@ -57,6 +57,7 @@ public class RegistroClasicoActivity extends AppCompatActivity {
         inicio= findViewById(R.id.et_register_login);
         regresar=findViewById(R.id.btn_regresar_register);
         //lst=(ListView) findViewById(R.id.list);
+        //lst.setAdapter();
 
 
 

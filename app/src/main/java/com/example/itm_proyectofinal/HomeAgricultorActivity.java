@@ -14,7 +14,7 @@ public class HomeAgricultorActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_home_agricultor);
 
         int images[]= {R.drawable.avocado,R.drawable.lucuma,R.drawable.naranja,R.drawable.manzana};
 
@@ -31,7 +31,7 @@ public class HomeAgricultorActivity extends AppCompatActivity {
         imageView.setBackgroundResource(image);
 
         v_flipper.addView(imageView);
-        v_flipper.setFlipInterval(6000);
+        v_flipper.setFlipInterval(5000);
         v_flipper.setAutoStart(true);
 
     }

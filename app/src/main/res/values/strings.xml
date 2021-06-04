@@ -35,7 +35,8 @@
     <string name="registerconrrss">Crea tu cuenta en un sólo paso</string>
 
     <string name="home">HOME</string>
-
+    <string name="agricultor">SOY AGRICULTOR</string>
+    <string name="comprador">SOY COMPRADOR</string>
 
 
 </resources>
