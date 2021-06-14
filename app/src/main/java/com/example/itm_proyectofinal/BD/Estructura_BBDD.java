@@ -49,10 +49,9 @@ public class Estructura_BBDD {
             "DNI_agri VARCHAR(8) NOT NULL," +
             "fecha_naci_agri DATE NOT NULL," +
             "celular_agri VARCHAR(9) NOT NULL," +
+            "departamento_agri VARCHAR(30) NOT NULL,"+
             "provincia_agri VARCHAR(30) NOT NULL,"+
-            "distrito_agri VARCHAR(30) NOT NULL,"+
             "direccion_agri TEXT NOT NULL,"+
-            "descrip_cultivo_agri TEXT NOT NULL" +
             "tipo_agri VARCHAR(20) NOT NULL," +
             "correo_agri TEXT NOT NULL,"+
             "password_agri TEXT NOT NULL,"+

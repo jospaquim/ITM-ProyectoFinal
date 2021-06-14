@@ -94,10 +94,9 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
                 "DNI_agri",
                 "fecha_naci_agri",
                 "celular_agri",
+                "departamento_agri",
                 "provincia_agri",
-                "distrito_agri",
                 "direccion_agri",
-                "descrip_cultivo_agri",
                 "tipo_agri",
                 "correo_agri",
                 "password_agri",
@@ -113,6 +112,41 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
                 null,
                 null);
         return c;
+
+    }
+
+
+    public Cursor consultarAgricultorxCorreo(String correo){
+        SQLiteDatabase bd= this.getReadableDatabase();
+        String[] projection={
+                "nombre_agri",
+                "apellido_agri",
+                "DNI_agri",
+                "fecha_naci_agri",
+                "celular_agri",
+                "departamento_agri",
+                "provincia_agri",
+                "direccion_agri",
+                "tipo_agri",
+                "correo_agri",
+                "password_agri",
+                "fecha_registro_agri"
+
+        };
+        String selection="correo_agri"+" like ?";
+        String[] selectionArgs={correo};
+        Cursor c= bd.query("USUARIO_AGRICULTOR",
+                projection,
+                selection,
+                selectionArgs,
+                null,
+                null,
+                null);
+        if(c.getCount()>0){
+            return c;
+        }else{
+            return null;
+        }
 
     }
 

@@ -74,7 +74,7 @@ public class RegistroClasicoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showDatePickerDialog();
-                textViewreg.setMovementMethod(new ScrollingMovementMethod());
+                //textViewreg.setMovementMethod(new ScrollingMovementMethod());
 
             }
         });
@@ -100,7 +100,7 @@ public class RegistroClasicoActivity extends AppCompatActivity {
                         eDni.requestFocus();
                     }else{
                         if (celular.getText().toString().length()!=9){
-                            Toast.makeText(getApplicationContext(),"El numero de celular solo tiene 8 numeros, verificar sus datos",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"El numero de celular solo tiene 9 numeros, verificar sus datos",Toast.LENGTH_LONG).show();
                             celular.setText("");
                             celular.requestFocus();
                         }else{

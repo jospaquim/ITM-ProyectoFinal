@@ -2,10 +2,11 @@
 <resources>
 
     <string-array name="Region">
-        <item>Elija una región</item>
+        <item>Elija un Departamento</item>
         <item>Amazonas</item>
         <item>Áncash</item>
         <item>Arequipa</item>
+        <item>Apurimac</item>
         <item>Ayacucho</item>
         <item>Cajamarca</item>
         <item>Callao</item>

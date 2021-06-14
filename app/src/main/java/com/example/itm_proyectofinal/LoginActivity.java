@@ -23,7 +23,7 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 public class LoginActivity extends AppCompatActivity {
-    Button btnLogin;
+    Button btnLogin,regresar;
     EditText eCorreo,ePassword;
     TextView registrarse;
     public static final String clave="gdsawr";
@@ -36,8 +36,17 @@ public class LoginActivity extends AppCompatActivity {
         ePassword=(EditText) findViewById(R.id.et_userPassword_register);
         btnLogin=(Button) findViewById(R.id.btn_login);
         registrarse=(TextView) findViewById(R.id.et_register_login);
+        regresar=(Button) findViewById(R.id.btn_regresar_register);
 
         final SQLite_OpenHelper helper= new SQLite_OpenHelper(this);
+
+        regresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+            }
+        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
