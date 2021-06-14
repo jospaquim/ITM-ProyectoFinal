@@ -16,14 +16,6 @@
             android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/textViewreg"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
-
     <Button
         android:id="@+id/btn_regresar_register"
         style="?android:attr/borderlessButtonStyle"
@@ -50,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/nunito_sans_semibold"
         android:text="@string/registerconrrss"
@@ -60,44 +52,45 @@
         app:layout_constraintStart_toStartOf="@+id/textViewreg"
         app:layout_constraintTop_toBottomOf="@+id/btn_regresar_register" />
 
-    <Button
-        android:id="@+id/btn_login_fb"
-        android:layout_width="162dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/fb"
-        app:layout_constraintStart_toStartOf="@+id/textViewreg"
-        app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btn_login_g"
-        android:layout_width="163dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/google"
-        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_login_fb"
-        app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
+            <Button
+                android:id="@+id/btn_login_fb"
+                android:layout_width="162dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/fb" />
+
+            <Button
+                android:id="@+id/btn_login_g"
+                android:layout_width="163dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/google"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="1.0" />
+
+        </LinearLayout>
 
     <TextView
         android:id="@+id/contucorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/nunito_sans_bold"
         android:gravity="center|start"
         android:text="@string/regconcorreo"
         android:textColor="#000000"
         android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-        app:layout_constraintStart_toStartOf="@+id/textViewreg"
-        app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
+        android:textStyle="bold"/>
 
 
 
