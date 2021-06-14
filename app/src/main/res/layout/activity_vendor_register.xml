@@ -96,7 +96,7 @@
 
 
             <EditText
-                android:id="@+id/userDNI"
+                android:id="@+id/et_nameProduct"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -116,7 +116,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
 
             <EditText
-                android:id="@+id/userName"
+                android:id="@+id/et_productPrice"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -134,10 +134,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.427"
                 app:layout_constraintStart_toStartOf="@+id/textViewreg"
-                app:layout_constraintTop_toBottomOf="@+id/userDNI" />
+                app:layout_constraintTop_toBottomOf="@+id/et_nameProduct" />
 
             <EditText
-                android:id="@+id/userLastName"
+                android:id="@+id/et_productStock"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -154,7 +154,7 @@
                 android:paddingEnd="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/textViewreg"
                 app:layout_constraintStart_toStartOf="@+id/textViewreg"
-                app:layout_constraintTop_toBottomOf="@+id/userName" />
+                app:layout_constraintTop_toBottomOf="@+id/et_productPrice" />
 
             <EditText
                 android:id="@+id/etUserPhone"
@@ -174,7 +174,7 @@
                 android:paddingEnd="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/et_userMail_register"
                 app:layout_constraintStart_toStartOf="@+id/et_userMail_register"
-                app:layout_constraintTop_toBottomOf="@+id/userLastName" />
+                app:layout_constraintTop_toBottomOf="@+id/et_productStock" />
 
             <EditText
                 android:id="@+id/etUserDate"
@@ -262,8 +262,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/et_userPassword_register" />
 
             <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="373dp"
+                android:id="@+id/s_unidadMedida"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
@@ -277,7 +277,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/et_Re_userPassword_register" />
 
             <EditText
-                android:id="@+id/etUserDireccion"
+                android:id="@+id/et_productDescription"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -294,10 +294,10 @@
                 android:paddingEnd="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+                app:layout_constraintTop_toBottomOf="@+id/s_unidadMedida" />
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_addProduct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -311,7 +311,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="@+id/textViewreg"
                 app:layout_constraintStart_toStartOf="@+id/textViewreg"
-                app:layout_constraintTop_toBottomOf="@+id/etUserDireccion" />
+                app:layout_constraintTop_toBottomOf="@+id/et_productDescription" />
 
             <TextView
                 android:id="@+id/et_register_login"
@@ -325,7 +325,7 @@
                 android:text="@string/concuenta"
                 app:layout_constraintEnd_toEndOf="@+id/textViewreg"
                 app:layout_constraintStart_toStartOf="@+id/textViewreg"
-                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_addProduct" />
         </LinearLayout>
 
     </ScrollView>

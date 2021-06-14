@@ -5,7 +5,6 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -34,15 +33,15 @@ public class RegistroAgricultorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vendor_register);
         date=(EditText) findViewById(R.id.etUserDate);
-        etDni=(EditText) findViewById(R.id.userDNI);
-        etNombre=(EditText) findViewById(R.id.userName);
-        etApellido=(EditText) findViewById(R.id.userLastName);
+        etDni=(EditText) findViewById(R.id.et_nameProduct);
+        etNombre=(EditText) findViewById(R.id.et_productPrice);
+        etApellido=(EditText) findViewById(R.id.et_productStock);
         celular=(EditText) findViewById(R.id.etUserPhone);
         correo=(EditText) findViewById(R.id.et_userMail_register);
         pass1=(EditText) findViewById(R.id.et_userPassword_register);
         pass2=(EditText) findViewById(R.id.et_Re_userPassword_register);
-        direccion=(EditText) findViewById(R.id.etUserDireccion);
-        btnLogin=(Button) findViewById(R.id.btn_login);
+        direccion=(EditText) findViewById(R.id.et_productDescription);
+        btnLogin=(Button) findViewById(R.id.btn_addProduct);
         login=(TextView) findViewById(R.id.et_register_login);
         regresar=(Button) findViewById(R.id.btn_regresar_register);
 

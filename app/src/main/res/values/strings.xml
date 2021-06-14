@@ -37,6 +37,17 @@
     <string name="home">HOME</string>
     <string name="agricultor">SOY AGRICULTOR</string>
     <string name="comprador">SOY COMPRADOR</string>
+    <string name="ataddproduct">Regresar</string>
+    <string name="titleaddproduct">Agregar producto</string>
+    <string name="subtitleaddproduct">Rellena todos los campos</string>
+
+
+    <string name="et_productName">Ingresa el nombre del producto</string>
+    <string name="et_productPrice">Ingresa el precio del producto</string>
+    <string name="et_productStock">Ingresa el stock del producto</string>
+    <string name="et_productDescrip">Ingresa la descripción del producto</string>
+    <string name="btn_AddProduct">Agregar Producto</string>
+    <string name="btnChoosePhotos">Agregar fotos del producto</string>
 
 
 </resources>

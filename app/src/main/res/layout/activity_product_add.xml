@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroAgricultorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_regresar_perfil"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_white"
+                android:drawableStart="@drawable/ic_left2"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="start|center_vertical"
+                android:text="@string/ataddproduct"
+                android:textAllCaps="false"
+                android:textColor="@color/bton_app"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toTopOf="@+id/textViewreg" />
+
+            <TextView
+                android:id="@+id/enunsolopaso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/titleaddproduct"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/btn_regresar_register" />
+
+            <TextView
+                android:id="@+id/contucorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/subtitleaddproduct"
+                android:textColor="#655D5D"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/et_nameProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="DNI"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_task"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_productName"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
+
+            <EditText
+                android:id="@+id/et_productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="name"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_money"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_productPrice"
+                android:inputType="number|numberDecimal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.427"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_nameProduct" />
+
+            <EditText
+                android:id="@+id/et_productStock"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="stock"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/iclayers"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_productStock"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_productPrice" />
+
+            <Spinner
+                android:id="@+id/s_unidadMedida"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_imput"
+                android:entries="@array/UnidadesDeMedida"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_Re_userPassword_register" />
+
+            <Button
+                android:id="@+id/btn_addPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_upload_photos"
+                android:drawableStart="@drawable/ic_photo_library"
+                android:fontFamily="sans-serif"
+                android:gravity="start|center_vertical"
+                android:paddingStart="60dp"
+                android:paddingEnd="5dp"
+                android:text="@string/btnChoosePhotos"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_productDescription" />
+
+            <EditText
+                android:id="@+id/et_productDescription"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="direccion"
+
+                android:background="@drawable/custom_imput"
+                android:ems="10"
+                android:hint="@string/et_productDescrip"
+                android:inputType="textMultiLine"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/s_unidadMedida" />
+
+            <Button
+                android:id="@+id/btn_addProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_main"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/btn_AddProduct"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_productDescription" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
