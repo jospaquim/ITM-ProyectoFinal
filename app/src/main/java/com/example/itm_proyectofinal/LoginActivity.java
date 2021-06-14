@@ -1,10 +1,8 @@
 package com.example.itm_proyectofinal;
 
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +10,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itm_proyectofinal.OpenHelper.SQLite_OpenHelper;
@@ -34,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         eCorreo=(EditText) findViewById(R.id.et_userMail_register);
         ePassword=(EditText) findViewById(R.id.et_userPassword_register);
-        btnLogin=(Button) findViewById(R.id.btn_login);
+        btnLogin=(Button) findViewById(R.id.btn_addProduct);
         registrarse=(TextView) findViewById(R.id.et_register_login);
         regresar=(Button) findViewById(R.id.btn_regresar_register);
 

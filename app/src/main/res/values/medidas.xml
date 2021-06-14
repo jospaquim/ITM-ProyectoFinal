@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="UnidadesDeMedida">
+        <item>Elije una unidad de medida...</item>
+        <item>Kilo (Kg)</item>
+        <item>Docena</item>
+        <item>Gramos (g)</item>
+        <item>Litros (L)</item>
+        <item>Milílitros (ml)</item>
+    </string-array>
+
+
+</resources>

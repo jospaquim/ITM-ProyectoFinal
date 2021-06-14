@@ -262,8 +262,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/et_userPassword_register" />
 
             <Spinner
-                android:id="@+id/spinner_depa"
-                android:layout_width="match_parent"
+                android:id="@+id/spinner"
+                android:layout_width="373dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
@@ -271,18 +271,10 @@
                 android:background="@drawable/custom_imput"
                 android:entries="@array/Region"
                 app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-                app:layout_constraintHorizontal_bias="0.0"/>
+                app:layout_constraintHorizontal_bias="0.0"
 
-            <Spinner
-                android:id="@+id/spinner_provincia"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/custom_imput"
-                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-                app:layout_constraintHorizontal_bias="0.0"/>
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_Re_userPassword_register" />
 
             <EditText
                 android:id="@+id/etUserDireccion"
@@ -303,17 +295,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinner" />
-
-            <Spinner
-                android:id="@+id/spinner_tipo"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/custom_imput"
-                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-                app:layout_constraintHorizontal_bias="0.0"/>
 
             <Button
                 android:id="@+id/btn_login"
