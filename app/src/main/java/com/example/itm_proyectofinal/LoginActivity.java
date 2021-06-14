@@ -29,9 +29,9 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        eCorreo=(EditText) findViewById(R.id.et_userMail_register);
-        ePassword=(EditText) findViewById(R.id.et_userPassword_register);
-        btnLogin=(Button) findViewById(R.id.btn_addProduct);
+        eCorreo=(EditText) findViewById(R.id.et_userMail_cla);
+        ePassword=(EditText) findViewById(R.id.et_userPassword_cla);
+        btnLogin=(Button) findViewById(R.id.btn_crear_cla);
         registrarse=(TextView) findViewById(R.id.et_register_login);
         regresar=(Button) findViewById(R.id.btn_regresar_register);
 

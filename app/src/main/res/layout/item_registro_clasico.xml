@@ -16,7 +16,7 @@
 
 
         <EditText
-            android:id="@+id/et_nameProduct"
+            android:id="@+id/userDNI_cla"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -36,7 +36,7 @@
             app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
 
         <EditText
-            android:id="@+id/et_productPrice"
+            android:id="@+id/userName_cla"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -54,10 +54,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.427"
             app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_nameProduct" />
+            app:layout_constraintTop_toBottomOf="@+id/userDNI_cla" />
 
         <EditText
-            android:id="@+id/et_productStock"
+            android:id="@+id/userLastName_cla"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -74,10 +74,10 @@
             android:paddingEnd="12dp"
             app:layout_constraintEnd_toEndOf="@+id/textViewreg"
             app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_productPrice" />
+            app:layout_constraintTop_toBottomOf="@+id/userName_cla" />
 
         <EditText
-            android:id="@+id/etUserPhone"
+            android:id="@+id/etUserPhone_agri"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -92,12 +92,12 @@
             android:inputType="phone"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/et_userMail_register"
-            app:layout_constraintStart_toStartOf="@+id/et_userMail_register"
-            app:layout_constraintTop_toBottomOf="@+id/et_productStock" />
+            app:layout_constraintEnd_toEndOf="@+id/et_userMail_cla"
+            app:layout_constraintStart_toStartOf="@+id/et_userMail_cla"
+            app:layout_constraintTop_toBottomOf="@+id/userLastName_cla" />
 
         <EditText
-            android:id="@+id/etUserDate"
+            android:id="@+id/etUserDate_agri"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -116,12 +116,12 @@
             android:paddingStart="12dp"
 
             android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/et_userMail_register"
-            app:layout_constraintStart_toStartOf="@+id/et_userMail_register"
-            app:layout_constraintTop_toBottomOf="@+id/etUserPhone" />
+            app:layout_constraintEnd_toEndOf="@+id/et_userMail_cla"
+            app:layout_constraintStart_toStartOf="@+id/et_userMail_cla"
+            app:layout_constraintTop_toBottomOf="@+id/etUserPhone_agri" />
 
         <EditText
-            android:id="@+id/et_userMail_register"
+            android:id="@+id/et_userMail_cla"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -138,10 +138,10 @@
             android:paddingEnd="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etUserDate" />
+            app:layout_constraintTop_toBottomOf="@+id/etUserDate_agri" />
 
         <EditText
-            android:id="@+id/et_userPassword_register"
+            android:id="@+id/et_userPassword_cla"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -159,10 +159,10 @@
             app:layout_constraintEnd_toEndOf="@+id/textViewreg"
             app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_userMail_register" />
+            app:layout_constraintTop_toBottomOf="@+id/et_userMail_cla" />
 
         <EditText
-            android:id="@+id/et_ConfirmPassword_register"
+            android:id="@+id/et_ConfirmPassword_cla"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -179,10 +179,10 @@
             android:paddingEnd="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_userPassword_register" />
+            app:layout_constraintTop_toBottomOf="@+id/et_userPassword_cla" />
 
         <Button
-            android:id="@+id/btn_addProduct"
+            android:id="@+id/btn_crear_cla"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -196,7 +196,7 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="@+id/textViewreg"
             app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_ConfirmPassword_register" />
+            app:layout_constraintTop_toBottomOf="@+id/et_ConfirmPassword_cla" />
 
         <TextView
             android:id="@+id/et_register_login"
@@ -209,7 +209,7 @@
             android:text="@string/concuenta"
             app:layout_constraintEnd_toEndOf="@+id/textViewreg"
             app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/btn_addProduct" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_crear_cla" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

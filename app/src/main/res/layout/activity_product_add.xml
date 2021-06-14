@@ -69,7 +69,7 @@
 
 
             <EditText
-                android:id="@+id/et_nameProduct"
+                android:id="@+id/userDNI_cla"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -89,7 +89,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
 
             <EditText
-                android:id="@+id/et_productPrice"
+                android:id="@+id/userName_cla"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -107,10 +107,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.427"
                 app:layout_constraintStart_toStartOf="@+id/textViewreg"
-                app:layout_constraintTop_toBottomOf="@+id/et_nameProduct" />
+                app:layout_constraintTop_toBottomOf="@+id/userDNI_cla" />
 
             <EditText
-                android:id="@+id/et_productStock"
+                android:id="@+id/userLastName_cla"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -127,7 +127,7 @@
                 android:paddingEnd="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/textViewreg"
                 app:layout_constraintStart_toStartOf="@+id/textViewreg"
-                app:layout_constraintTop_toBottomOf="@+id/et_productPrice" />
+                app:layout_constraintTop_toBottomOf="@+id/userName_cla" />
 
             <Spinner
                 android:id="@+id/s_unidadMedida"
@@ -186,7 +186,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/s_unidadMedida" />
 
             <Button
-                android:id="@+id/btn_addProduct"
+                android:id="@+id/btn_crear_cla"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"

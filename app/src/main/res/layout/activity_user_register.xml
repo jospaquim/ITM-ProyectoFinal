@@ -5,297 +5,299 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistroClasicoActivity">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-        <Button
-        android:id="@+id/btn_regresar_register"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/button_white"
-        android:drawableStart="@drawable/ic_left"
-        android:fontFamily="@font/nunito_sans_bold"
-        android:gravity="start|center_vertical"
-        android:text="@string/register"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewreg"
-        app:layout_constraintTop_toTopOf="@+id/textViewreg" />
-
-    <TextView
-        android:id="@+id/enunsolopaso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:fontFamily="@font/nunito_sans_semibold"
-        android:text="@string/registerconrrss"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-        app:layout_constraintStart_toStartOf="@+id/textViewreg"
-        app:layout_constraintTop_toBottomOf="@+id/btn_regresar_register" />
-
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-64dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
+
             <Button
-                android:id="@+id/btn_login_fb"
-                android:layout_width="162dp"
-                android:layout_height="48dp"
+                android:id="@+id/btn_regresar_register"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/fb" />
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_white"
+                android:drawableStart="@drawable/ic_left"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="start|center_vertical"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toTopOf="@+id/textViewreg" />
 
-            <Button
-                android:id="@+id/btn_login_g"
-                android:layout_width="163dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="20dp"
+            <TextView
+                android:id="@+id/enunsolopaso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="@string/registerconrrss"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/btn_regresar_register" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_login_fb"
+                    android:layout_width="162dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/fb" />
+
+                <Button
+                    android:id="@+id/btn_login_g"
+                    android:layout_width="163dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/google"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                    app:layout_constraintHorizontal_bias="1.0" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/contucorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="30dp"
-                android:text="@string/google"
-                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-                app:layout_constraintHorizontal_bias="1.0" />
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center|start"
+                android:text="@string/regconcorreo"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
+
+            <EditText
+                android:id="@+id/userDNI_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="DNI"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_portrait"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_DNI"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
+
+            <EditText
+                android:id="@+id/userName_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="name"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_name"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.427"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/userDNI_cla" />
+
+            <EditText
+                android:id="@+id/userLastName_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="lastname"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_circle"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_apellido"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/userName_cla" />
+
+            <EditText
+                android:id="@+id/etUserPhone_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="number"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_number"
+                android:inputType="phone"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_userMail_cla"
+                app:layout_constraintStart_toStartOf="@+id/et_userMail_cla"
+                app:layout_constraintTop_toBottomOf="@+id/userLastName_cla" />
+
+            <EditText
+                android:id="@+id/etUserDate_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="date"
+                android:background="@drawable/custom_imput"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/et_date"
+                android:inputType="date"
+                android:maxLines="1"
+                android:paddingStart="12dp"
+
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_userMail_cla"
+                app:layout_constraintStart_toStartOf="@+id/et_userMail_cla"
+                app:layout_constraintTop_toBottomOf="@+id/etUserPhone_agri" />
+
+            <EditText
+                android:id="@+id/et_userMail_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="email"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_email_login"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etUserDate_agri" />
+
+            <EditText
+                android:id="@+id/et_userPassword_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="password"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_pass_login"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_userMail_cla" />
+
+            <EditText
+                android:id="@+id/et_ConfirmPassword_cla"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="password"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_confpass_login"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_userPassword_cla" />
+
+            <Button
+                android:id="@+id/btn_crear_cla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_main"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_ConfirmPassword_cla" />
+
+            <TextView
+                android:id="@+id/et_register_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:text="@string/concuenta"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/btn_crear_cla" />
 
         </LinearLayout>
 
-
-    <TextView
-        android:id="@+id/contucorreo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:fontFamily="@font/nunito_sans_bold"
-        android:gravity="center|start"
-        android:text="@string/regconcorreo"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        android:textStyle="bold"/>
-
-
-
-        <EditText
-            android:id="@+id/et_nameProduct"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="DNI"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_portrait"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_DNI"
-            android:inputType="number"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-            app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
-
-        <EditText
-            android:id="@+id/et_productPrice"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="name"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_circle"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_name"
-            android:inputType="textPersonName"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.427"
-            app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_nameProduct" />
-
-        <EditText
-            android:id="@+id/et_productStock"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="lastname"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_circle"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_apellido"
-            android:inputType="textPersonName"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-            app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_productPrice" />
-
-        <EditText
-            android:id="@+id/etUserPhone"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="number"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_phone"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_number"
-            android:inputType="phone"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/et_userMail_register"
-            app:layout_constraintStart_toStartOf="@+id/et_userMail_register"
-            app:layout_constraintTop_toBottomOf="@+id/et_productStock" />
-
-        <EditText
-            android:id="@+id/etUserDate"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="date"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_calendar"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_date"
-            android:inputType="date"
-            android:paddingStart="12dp"
-            android:focusable="false"
-            android:clickable="true"
-            android:maxLines="1"
-
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/et_userMail_register"
-            app:layout_constraintStart_toStartOf="@+id/et_userMail_register"
-            app:layout_constraintTop_toBottomOf="@+id/etUserPhone" />
-
-        <EditText
-            android:id="@+id/et_userMail_register"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="email"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_email"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_email_login"
-            android:inputType="textEmailAddress"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etUserDate" />
-
-        <EditText
-            android:id="@+id/et_userPassword_register"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="password"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_lock"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_pass_login"
-            android:inputType="textPassword"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-            app:layout_constraintHorizontal_bias="0.8"
-            app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_userMail_register" />
-
-        <EditText
-            android:id="@+id/et_ConfirmPassword_register"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="30dp"
-            android:autofillHints="password"
-            android:background="@drawable/custom_imput"
-            android:drawableStart="@drawable/ic_lock"
-            android:drawablePadding="12dp"
-            android:ems="10"
-            android:hint="@string/et_confpass_login"
-            android:inputType="textPassword"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_userPassword_register" />
-
-        <Button
-            android:id="@+id/btn_addProduct"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/btn_main"
-            android:fontFamily="@font/nunito_sans_bold"
-            android:text="@string/register"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-            app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/et_ConfirmPassword_register" />
-
-        <TextView
-            android:id="@+id/et_register_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="30dp"
-            android:gravity="center"
-            android:paddingBottom="30dp"
-            android:text="@string/concuenta"
-            app:layout_constraintEnd_toEndOf="@+id/textViewreg"
-            app:layout_constraintStart_toStartOf="@+id/textViewreg"
-            app:layout_constraintTop_toBottomOf="@+id/btn_addProduct" />
-
-    </LinearLayout>
-
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
