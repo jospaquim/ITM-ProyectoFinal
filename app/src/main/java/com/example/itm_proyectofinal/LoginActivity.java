@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,8 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 import com.example.itm_proyectofinal.OpenHelper.SQLite_OpenHelper;
+import com.google.android.material.navigation.NavigationView;
 
 import java.security.MessageDigest;
 
@@ -24,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText eCorreo,ePassword;
     TextView registrarse;
     public static final String clave="gdsawr";
+
+    private AppBarConfiguration mAppBarConfiguration;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +73,19 @@ public class LoginActivity extends AppCompatActivity {
                                 i.putExtra("SesionAgricultor",cursorAgricultor.getColumnIndex("id_us_agri"));
 
                                 startActivity(i);
+
+                               /* DrawerLayout drawer = findViewById(R.id.drawer_layout);
+                                NavigationView navigationView = findViewById(R.id.nav_view);
+                                // Passing each menu ID as a set of Ids because each
+                                // menu should be considered as top level destinations.
+                                mAppBarConfiguration = new AppBarConfiguration.Builder(
+                                        R.id.nav_home, R.id.nav_pedido, R.id.nav_producto, R.id.nav_my_account)
+                                        .setOpenableLayout(drawer)
+                                        .build();
+                                NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+                                NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+                                NavigationUI.setupWithNavController(navigationView, navController);*/
+
                             }else {
                                 Toast.makeText(getApplicationContext(),"DATOS INVALIDOS, VERIFICAR!!!",Toast.LENGTH_LONG).show();
                             }
@@ -114,4 +136,19 @@ public class LoginActivity extends AppCompatActivity {
         SecretKeySpec secretKey = new SecretKeySpec(key, "AES");
         return secretKey;
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+                || super.onSupportNavigateUp();
+    }
+
 }
