@@ -7,6 +7,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.itm_proyectofinal.BD.Estructura_BBDD;
 
+import org.w3c.dom.Text;
+
+import java.util.EmptyStackException;
+
 public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "freshmarket.dbd";
@@ -19,6 +23,8 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Estructura_BBDD.SQL_CREATE_USER_CLASICO);
         db.execSQL(Estructura_BBDD.SQL_CREATE_USER_AGRICULTOR);
+        db.execSQL(Estructura_BBDD.SQL_CREATE_PRODUCTO);
+        db.execSQL(Estructura_BBDD.SQL_CREATE_REGISTRO);
         //db.execSQL();
     }
 
@@ -26,6 +32,8 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(Estructura_BBDD.SQL_DELETE_USER_CLASICO);
         db.execSQL(Estructura_BBDD.SQL_DELETE_USER_AGRICULTOR);
+        db.execSQL(Estructura_BBDD.SQL_DELETE_USER_PRODUCTO);
+        db.execSQL(Estructura_BBDD.SQL_DELETE_REGISTRO);
         onCreate(db);
     }
 
@@ -65,6 +73,7 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public Cursor consultarUsuariosClasico(String usu, String cla){
         SQLiteDatabase bd= this.getReadableDatabase();
         String[] projection={
+                "id_us_cla",
                 "nombre_cla",
                 "apellido_cla",
                 "DNI_cla",
@@ -89,6 +98,7 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public Cursor consultarUsuariosAgricultor(String usu, String cla){
         SQLiteDatabase bd= this.getReadableDatabase();
         String[] projection={
+                "id_us_agri",
                 "nombre_agri",
                 "apellido_agri",
                 "DNI_agri",
@@ -149,6 +159,83 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
         }
 
     }
+
+    public Cursor consultarProductoxNombre(String nombre, int id_Agri){
+        SQLiteDatabase bd= this.getReadableDatabase();
+        Cursor cursor= bd.rawQuery("SELECT R.id_us_agric,P.id_prod,P.nombre_prod FROM REGISTRO R INNER JOIN PRODUCTO P ON R.id_produc=P.id_prod WHERE (P.nombre_prod like '"+nombre+"') and (R.id_us_agric="+id_Agri+")",null);
+        //Cursor cursor2 = bd.rawQuery("SELECT * FROM PRODUCTO", null);
+
+            if(cursor.getCount()>0){
+                return cursor;
+            }else{
+                return null;
+            }
+
+    }
+
+    public Cursor consultarProductoxIDxNombre(String nombre,int id_Agri,int id_Prod){
+        SQLiteDatabase bd= this.getReadableDatabase();
+        Cursor cursor= bd.rawQuery("SELECT R.id_us_agric,P.id_prod FROM REGISTRO R INNER JOIN PRODUCTO P ON R.id_produc=P.id_prod WHERE R.id_produc="+id_Agri+" AND P.nombre_prod LIKE "+nombre+" AND P.id_produc="+id_Prod,null);
+        Cursor cursor2 = bd.rawQuery("SELECT * FROM PRODUCTO", null);
+        if (cursor2.getCount()>0){
+            if(cursor.getCount()>0){
+                return cursor;
+            }else{
+                return null;
+            }
+        }else{
+            return null;
+        }
+
+
+    }
+
+
+    public Cursor obtenerIdProducto() {
+        SQLiteDatabase bd = this.getReadableDatabase();
+        Cursor cursor = bd.rawQuery("SELECT MAX(id_prod) FROM PRODUCTO ORDER BY id_prod DESC", null);//DUDA SI EXISTE TOP(1) Y SI EL ORDENAMIENTO ESTA BIEN
+
+        //Cursor cursor = bd.rawQuery("SELECT TOP(1) id_prod FROM REGISTRO R INNER JOIN PRODUCTO P ON R.id_produc=P.id_prod ORDER BY id_prod DESC", null);//DUDA SI EXISTE TOP(1) Y SI EL ORDENAMIENTO ESTA BIEN
+        if(cursor.getCount()>0){
+            return cursor;
+        }else{
+            return null;
+        }
+        /*while (cursor.moveToNext()) {
+            usu = new Usuario();
+            usu.setId(cursor.getInt(0));
+            usu.setNombre(cursor.getString(1));
+            usu.setDistrito(cursor.getString(2));
+            usu.setCorreo(cursor.getString(3));
+            usu.setPassword(cursor.getString(4));
+            lstUsuario.add(usu);
+        }*/
+    }
+
+    public Cursor obtenerUsuarioAgri(int id) {
+        SQLiteDatabase bd = this.getReadableDatabase();
+        Cursor cursor = bd.rawQuery("SELECT * FROM USUARIO_AGRICULTOR WHERE id_us_agri="+id, null);
+        if(cursor.getCount()>0){
+            return cursor;
+        }else{
+            return null;
+        }
+    }
+
+    /*public void consultaListarUsuarios(){
+        SQLiteDatabase db= helper.getReadableDatabase();
+        Usuario usu=null;
+        Cursor cursor= db.rawQuery("SELECT * FROM "+ Estructura_BBDD.TABLE_NAME,null);
+        while (cursor.moveToNext()){
+            usu= new Usuario();
+            usu.setId(cursor.getInt(0));
+            usu.setNombre(cursor.getString(1));
+            usu.setDistrito(cursor.getString(2));
+            usu.setCorreo(cursor.getString(3));
+            usu.setPassword(cursor.getString(4));
+            lstUsuario.add(usu);
+        }
+    }*/
 
 
     /*public  void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion){

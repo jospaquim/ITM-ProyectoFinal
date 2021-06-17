@@ -13,76 +13,178 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imagenProdAgri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/ic_launcher_round" />
         <TextView
-            android:id="@+id/idNombreProdAgri"
-            android:layout_width="wrap_content"
+            android:id="@+id/idNombreP"
+            android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="PLATANO"
-            android:textSize="25sp"
+            android:textSize="27sp"
+            android:layout_marginBottom="5dp"
             android:textStyle="bold" />
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/idImagenP"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/desc"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:text="DESCRIPCION:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descripcionP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="5dp"
+            android:text="XZCZXCZXCXCCCCCCCCCCCCCCCCCCCCCCCCCCDSDS"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/simbolo"
+                android:id="@+id/pre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
+                android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="S/"
-                android:textSize="25sp"
+                android:text="PRECIO:"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/idPrecioAgri"
+                android:id="@+id/idPrecioP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="5dp"
+                android:layout_marginStart="60dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="7dp"
+                android:paddingBottom="5dp"
                 android:text="48.90"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/simbolo2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
 
-                android:text="/"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/idCretrioAgri"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-
-                android:text="kg"
-                android:textSize="25sp" />
-
-            <Button
-                android:id="@+id/btnVerdetalleAgri"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="23dp"
-                android:gravity="center_vertical"
-                android:text="VER DETALLE" />
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/med"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="UNIDAD DE MEDIDA:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/idMedidaP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="kg"
+                android:textSize="17sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="STOCK:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/idStockP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="50"
+                android:textSize="17sp" />
+
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/idModificarP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="30dp"
+            android:textSize="20sp"
+            android:text="MODIFICAR" />
+        <Button
+            android:id="@+id/idBorrarP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="ELIMINAR" />
+
+    </LinearLayout>
+
 
     </LinearLayout>
 

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.itm_proyectofinal.vendedor.micuenta.MiCuentaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="116dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="NOMBRE:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idnombre_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="JUAN"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="APELLIDO:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idapellido_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="GOMEZ"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="DNI:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idDNI_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="70586921"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fecha_nac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="FECHA NACIMIENTO:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idFecha_Nac_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="10/20/2014"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="CELULAR:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idCelular_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="987654321"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="DEPARTAMENTO:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/id_depart_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Huanuco"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="PROVINCIA:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idProvincia_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="2 de mayo"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="DIRECCION:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idDirec_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="jiron 15 de abril Mz. L"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="TIPO:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idTipo_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Agricultor industrial"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="CORREO:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idCorreo_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="juan@gmail.com"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="40dp"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="FECHA REGISTRO:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+
+            <TextView
+                android:id="@+id/idfechaReg_ver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="17/08/2021 14:02:00"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_editar_perfil_agri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDITAR" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

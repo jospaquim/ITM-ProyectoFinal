@@ -61,7 +61,7 @@ public class Estructura_BBDD {
 
     public static final String SQL_CREATE_PRODUCTO="CREATE TABLE PRODUCTO (" +
             "id_prod INTEGER PRIMARY KEY AUTOINCREMENT," +
-            "nombre_prod TEXT NOT NULL," +
+            "nombre_prod VARCHAR(50) NOT NULL," +
             "precio_prod NUMERIC NOT NULL," +
             "criterio_medida_pro VARCHAR(15) NOT NULL," +
             "stock_prod INTEGER NOT NULL," +
@@ -70,12 +70,12 @@ public class Estructura_BBDD {
 
     public static final String SQL_DELETE_USER_PRODUCTO ="DROP TABLE IF EXISTS PRODUCTO";
 
+    //DUDA SI PONER CANTUDAD Y AGREGAR ALGUN TIPO(CREAR,MODIFICAR,AGREGAR)
     //analizar si el producto se considera como unico, si se da ese caso en el producto va una clave foranea de agricultor
     public static final String SQL_CREATE_REGISTRO="CREATE TABLE REGISTRO (" +
             "id_reg INTEGER PRIMARY KEY AUTOINCREMENT," +
-            "id_us_agric INTEGER FOREIGN KEY REFERENCES USUARIO_AGRICULTOR(id_us_agri)," +
-            "id_produc INTEGER FOREIGN KEY REFERENCES PRODUCTO(id_prod)," +
-            "cantidad_reg INTEGER NOT NULL," +
+            "id_us_agric INTEGER REFERENCES USUARIO_AGRICULTOR(id_us_agri)," +
+            "id_produc INTEGER REFERENCES PRODUCTO(id_prod)," +
             "fecha_reg DATETIME NOT NULL)";
 
     public static final String SQL_DELETE_REGISTRO ="DROP TABLE IF EXISTS REGISTRO";

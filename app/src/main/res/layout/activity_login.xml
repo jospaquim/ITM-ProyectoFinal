@@ -92,27 +92,28 @@
         app:layout_constraintTop_toBottomOf="@+id/enunsolopaso" />
 
     <EditText
-        android:id="@+id/et_userMail_cla"
+        android:id="@+id/et_userMail_general"
         android:layout_width="351dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="30dp"
+        android:autofillHints="email"
         android:background="@drawable/custom_imput"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="12dp"
-        android:autofillHints="email"
         android:ems="10"
         android:hint="@string/et_email_login"
         android:inputType="textEmailAddress"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textViewreg"
         app:layout_constraintTop_toBottomOf="@+id/contucorreo" />
 
     <EditText
-        android:id="@+id/et_userPassword_cla"
+        android:id="@+id/et_userPassword_general"
         android:layout_width="356dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -129,10 +130,10 @@
         android:autofillHints="password"
         app:layout_constraintEnd_toEndOf="@+id/textViewreg"
         app:layout_constraintStart_toStartOf="@+id/textViewreg"
-        app:layout_constraintTop_toBottomOf="@+id/et_userMail_cla" />
+        app:layout_constraintTop_toBottomOf="@+id/et_userMail_general" />
 
     <Button
-        android:id="@+id/btn_crear_cla"
+        android:id="@+id/btn_iniciar_sesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -146,10 +147,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewreg"
         app:layout_constraintStart_toStartOf="@+id/textViewreg"
-        app:layout_constraintTop_toBottomOf="@+id/et_userPassword_cla" />
+        app:layout_constraintTop_toBottomOf="@+id/et_userPassword_general" />
 
     <TextView
-        android:id="@+id/et_register_login"
+        android:id="@+id/et_regresar_general"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -159,7 +160,7 @@
         android:text="@string/sincuenta"
         app:layout_constraintEnd_toEndOf="@+id/textViewreg"
         app:layout_constraintStart_toStartOf="@+id/textViewreg"
-        app:layout_constraintTop_toBottomOf="@+id/btn_crear_cla" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_sesion" />
 
 
 

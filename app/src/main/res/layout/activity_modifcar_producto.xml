@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrarProductoActivity">
+    tools:context=".ModificarProductoActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
 
 
             <Button
-                android:id="@+id/btn_regresar_prod_home"
+                android:id="@+id/btn_regresar_list_prod"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
@@ -44,7 +44,7 @@
                 android:layout_marginEnd="30dp"
                 android:fontFamily="@font/nunito_sans_bold"
                 android:gravity="center"
-                android:text="@string/titleaddproduct"
+                android:text="Modificar producto"
                 android:textColor="#000000"
                 android:textSize="30sp"/>
 
@@ -64,7 +64,7 @@
 
 
             <EditText
-                android:id="@+id/nombre_prodc"
+                android:id="@+id/nombre_prodc_modificar"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -80,7 +80,7 @@
                 android:paddingEnd="12dp"/>
 
             <EditText
-                android:id="@+id/precio_prod"
+                android:id="@+id/precio_prod_modificar"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -98,7 +98,7 @@
                 app:layout_constraintHorizontal_bias="0.427"/>
 
             <EditText
-                android:id="@+id/stock_prod"
+                android:id="@+id/stock_prod_modificar"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -115,7 +115,7 @@
                 android:paddingEnd="12dp"/>
 
             <Spinner
-                android:id="@+id/unidaMedida_prod"
+                android:id="@+id/unidaMedida_prod_modificar"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
@@ -129,7 +129,7 @@
                 android:ems="10"/>
 
             <Button
-                android:id="@+id/btn_addPhotos"
+                android:id="@+id/btn_addPhotos_modificar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -150,7 +150,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/et_productDescription" />
 
             <EditText
-                android:id="@+id/descripcion_prod"
+                android:id="@+id/descripcion_prod_modificar"
                 android:layout_width="match_parent"
                 android:layout_height="102dp"
                 android:layout_marginStart="30dp"
@@ -166,7 +166,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/btn_crear_prod"
+                android:id="@+id/btn_crear_prod_modificar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -175,7 +175,7 @@
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/btn_main"
                 android:fontFamily="@font/nunito_sans_bold"
-                android:text="@string/btn_AddProduct"
+                android:text="Modificar Producto"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
