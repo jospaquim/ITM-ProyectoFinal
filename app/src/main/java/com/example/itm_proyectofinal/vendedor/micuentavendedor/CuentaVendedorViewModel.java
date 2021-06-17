@@ -1,19 +1,21 @@
-package com.example.itm_proyectofinal.vendedor.home;
+package com.example.itm_proyectofinal.vendedor.micuentavendedor;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class CuentaVendedorViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public CuentaVendedorViewModel
+            () {
         mText = new MutableLiveData<>();
-        mText.setValue("Este es la interfaz principal");
+        mText.setValue("fragmento de mi cuenta");
     }
 
     public LiveData<String> getText() {
+
         return mText;
     }
 }

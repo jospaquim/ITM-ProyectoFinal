@@ -9,18 +9,18 @@
             android:icon="@drawable/home_icon_silhouette"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_pedidos"
+            android:id="@+id/nav_pedido"
             android:icon="@drawable/notes"
-            android:title="@string/menu_pedidos" />
+            android:title="Pedidos" />
         <item
-            android:id="@+id/nav_productos"
+            android:id="@+id/nav_producto"
             android:icon="@drawable/products"
-            android:title="@string/menu_productos" />
+            android:title="Productos" />
 
         <item
-            android:id="@+id/nav_cuentavendedor"
+            android:id="@+id/nav_"
             android:icon="@drawable/user"
-            android:title="@string/menu_micuenta" />
+            android:title="Mi Cuenta" />
 
     </group>
 </menu>
