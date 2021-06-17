@@ -23,11 +23,10 @@ public class CuentaVendedorFragment extends Fragment {
         cuentavendedorViewModel =
                 new ViewModelProvider(this).get(CuentaVendedorViewModel.class);
         View root = inflater.inflate(R.layout.fragment_micuenta_vendedor , container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
         cuentavendedorViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
             }
         });
         return root;

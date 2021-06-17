@@ -18,29 +18,31 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
             <TextView
                 android:id="@+id/n"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
-                android:paddingTop="7dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
                 android:paddingRight="5dp"
-                android:text="NOMBRE:"
+                android:text="Nombre:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
-
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/idnombre_ver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
+
                 android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="5dp"
                 android:text="JUAN"
                 android:textSize="17sp" />
 
@@ -50,25 +52,26 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
             <TextView
                 android:id="@+id/ap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="APELLIDO:"
+                android:text="Apellidos:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
-
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/idapellido_ver"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -86,14 +89,15 @@
                 android:id="@+id/dni"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
                 android:text="DNI:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -101,6 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -118,14 +123,15 @@
                 android:id="@+id/fecha_nac"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="FECHA NACIMIENTO:"
+                android:text="Fecha de nacimiento:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -133,6 +139,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -150,14 +157,15 @@
                 android:id="@+id/cl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="CELULAR:"
+                android:text="Celular:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -165,6 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -182,14 +191,15 @@
                 android:id="@+id/dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="DEPARTAMENTO:"
+                android:text="Departamento:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -197,6 +207,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -214,14 +225,15 @@
                 android:id="@+id/pr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="PROVINCIA:"
+                android:text="Provincia:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -229,6 +241,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -246,14 +259,15 @@
                 android:id="@+id/dir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="DIRECCION:"
+                android:text="Dirección:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -261,12 +275,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="5dp"
                 android:text="jiron 15 de abril Mz. L"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:layout_marginEnd="30dp"
+                />
 
         </LinearLayout>
 
@@ -279,14 +296,15 @@
                 android:id="@+id/tp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="TIPO:"
+                android:text="Tipo:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -294,6 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -312,14 +331,15 @@
                 android:id="@+id/cr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="CORREO:"
+                android:text="Correo:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
@@ -327,6 +347,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
@@ -344,20 +365,23 @@
                 android:id="@+id/rg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_marginStart="40dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="right"
+                android:paddingLeft="10dp"
                 android:paddingTop="7dp"
                 android:paddingRight="5dp"
-                android:text="FECHA REGISTRO:"
+                android:text="Fecha de registro:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="right"/>
+                android:textStyle="bold" />
 
 
             <TextView
                 android:id="@+id/idfechaReg_ver"
-                android:layout_width="match_parent"
+                android:layout_width="183dp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans"
                 android:gravity="left"
                 android:paddingTop="10dp"
                 android:paddingBottom="5dp"
@@ -370,7 +394,16 @@
             android:id="@+id/btn_editar_perfil_agri"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EDITAR" />
+            android:layout_marginTop="30dp"
+            android:text="Editar"
+            android:background="@drawable/btn_main"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
 
 
     </LinearLayout>
