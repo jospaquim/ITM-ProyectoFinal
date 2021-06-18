@@ -59,9 +59,9 @@
 
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Inicio</string>
     <string name="menu_pedidos">Pedidos</string>
-    <string name="menu_productos">Productos</string>
+    <string name="menu_productos">Mis Productos</string>
     <string name="menu_micuenta">Mi Cuenta</string>
 
 </resources>

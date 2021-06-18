@@ -14,25 +14,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/idNombreP"
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="PLATANO"
             android:textSize="27sp"
-            android:layout_marginBottom="5dp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
 
         <ImageView
             android:id="@+id/idImagenP"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_width="142dp"
+            android:layout_height="141dp"
             android:background="@mipmap/ic_launcher_round" />
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
