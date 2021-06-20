@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.itm_proyectofinal.EditarAgricultorActivity;
 import com.example.itm_proyectofinal.R;
 import com.example.itm_proyectofinal.RegistrarProductoActivity;
 
@@ -41,7 +42,7 @@ public class CuentaVendedorFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getActivity(),"hereeeeeee",Toast.LENGTH_LONG).show();
-                Intent i= new Intent(getActivity(), RegistrarProductoActivity.class);
+                Intent i= new Intent(getActivity(), EditarAgricultorActivity.class);
                 startActivity(i);
             }
         });

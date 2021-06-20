@@ -1,4 +1,4 @@
-package com.example.itm_proyectofinal.vendedor.productos;
+package com.example.itm_proyectofinal.vendedor.micuentavendedor;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,18 +12,19 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itm_proyectofinal.R;
+import com.example.itm_proyectofinal.vendedor.productos.ProductosViewModel;
 
-public class AgregarProductoFragment extends Fragment {
-    private ProductosViewModel productAgregarViewModel;
+public class EditarCuentaAgriFragment extends Fragment {
+    private CuentaVendedorViewModel producEditarViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        productAgregarViewModel =
-                new ViewModelProvider(this).get(ProductosViewModel.class);
-        View root = inflater.inflate(R.layout.activity_product_add, container, false);
+        producEditarViewModel =
+                new ViewModelProvider(this).get(CuentaVendedorViewModel.class);
+        View root = inflater.inflate(R.layout.editar_perfil_agricultor, container, false);
 
 
-        productAgregarViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        producEditarViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
 
@@ -31,7 +32,6 @@ public class AgregarProductoFragment extends Fragment {
         });
         return root;
     }
+
+
 }
-
-
-

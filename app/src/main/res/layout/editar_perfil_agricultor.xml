@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit_fond_agri"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/enunsolopaso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="Editar Perfil"
+                android:textColor="#000000"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/contucorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/subtitleaddproduct"
+                android:textColor="#655D5D"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etUserPhone_agri_editar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="phone"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_number"
+                android:inputType="phone"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/et_userMail_cla"
+                app:layout_constraintStart_toStartOf="@+id/et_userMail_cla"
+                app:layout_constraintTop_toBottomOf="@+id/userLastName_agri" />
+
+            <EditText
+                android:id="@+id/et_userMail_agri_editar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="email"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_email_login"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etUserDate_agri" />
+
+            <EditText
+                android:id="@+id/et_userPassword_agri_editar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="password"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_pass_login"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_userMail_agri_editar" />
+
+            <EditText
+                android:id="@+id/et_Re_userPassword_agri_editar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="password"
+                android:background="@drawable/custom_imput"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/et_confpass_login"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="@+id/textViewreg"
+                app:layout_constraintTop_toBottomOf="@+id/et_userPassword_agri_editar" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_editar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_imput"
+                app:layout_constraintEnd_toEndOf="@+id/textViewreg"
+                app:layout_constraintHorizontal_bias="0.0"/>
+
+            <Button
+                android:id="@+id/btn_crear_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_main"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Editar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

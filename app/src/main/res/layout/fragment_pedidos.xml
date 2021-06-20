@@ -5,14 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.itm_proyectofinal.vendedor.pedidos.PedidosFragment">
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mis Pedidos"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="14dp" />
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="336dp"
         android:layout_height="642dp"
         android:layout_marginStart="10dp"
