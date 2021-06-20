@@ -21,6 +21,10 @@
             android:id="@+id/nav_cuentavendedor"
             android:icon="@drawable/user"
             android:title="@string/menu_micuenta" />
+        <item
+            android:id="@+id/nav_agregar_producto"
+            android:icon="@drawable/user"
+            android:title="Agregar Producto" />
 
     </group>
 </menu>

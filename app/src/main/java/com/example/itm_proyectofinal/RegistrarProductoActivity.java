@@ -44,11 +44,11 @@ public class RegistrarProductoActivity extends AppCompatActivity {
         agregar=(Button) findViewById(R.id.btn_crear_prod);
 
         final SQLite_OpenHelper helper=new SQLite_OpenHelper(this);
-        Bundle bundle=getIntent().getExtras();
+        /*Bundle bundle=getIntent().getExtras();
         if (bundle.containsKey("idAgricultor")){
             codAgri= bundle.getInt("idAgricultor");
             //bundle.remove("Mensaje");
-        }
+        }*/
         //nombre.setText(""+codAgri);
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override

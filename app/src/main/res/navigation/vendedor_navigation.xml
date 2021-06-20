@@ -28,6 +28,10 @@
         android:name="com.example.itm_proyectofinal.vendedor.micuentavendedor.CuentaVendedorFragment"
         android:label="Mi Cuenta"
         tools:layout="@layout/fragment_micuenta_vendedor" />
+    <fragment
+        android:id="@+id/nav_agregar_producto"
+        android:label="Agregar Producto"
+        tools:layout="@layout/activity_product_add" />
 
 
 </navigation>

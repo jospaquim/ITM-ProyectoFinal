@@ -1,5 +1,6 @@
 package com.example.itm_proyectofinal.vendedor.micuentavendedor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.itm_proyectofinal.R;
+import com.example.itm_proyectofinal.RegistrarProductoActivity;
 
 public class CuentaVendedorFragment extends Fragment{
 
@@ -32,6 +34,17 @@ public class CuentaVendedorFragment extends Fragment{
         View root = inflater.inflate(R.layout.fragment_micuenta_vendedor , container, false);
 
 
+        editar= root.findViewById(R.id.btn_editar_perfil_agri);
+
+
+        editar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getActivity(),"hereeeeeee",Toast.LENGTH_LONG).show();
+                Intent i= new Intent(getActivity(), RegistrarProductoActivity.class);
+                startActivity(i);
+            }
+        });
 
         cuentavendedorViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
@@ -42,12 +55,7 @@ public class CuentaVendedorFragment extends Fragment{
         return root;
 
 
-        /*editar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(),"hereeeeeee",Toast.LENGTH_LONG).show();
-            }
-        });*/
+
 
     }
 
