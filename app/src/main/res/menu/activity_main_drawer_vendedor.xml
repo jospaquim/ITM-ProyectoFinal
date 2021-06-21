@@ -18,7 +18,7 @@
             android:title="@string/menu_productos" />
 
         <item
-            android:id="@+id/nav_cuentavendedor"
+            android:id="@+id/nav_micuenta_vendedor"
             android:icon="@drawable/user"
             android:title="@string/menu_micuenta" />
         <item

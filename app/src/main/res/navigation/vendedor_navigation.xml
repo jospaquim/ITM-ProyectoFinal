@@ -12,19 +12,19 @@
         tools:layout="@layout/fragment_home_vendedor" />
 
     <fragment
-        android:id="@+id/nav_pedido"
+        android:id="@+id/nav_pedidos"
         android:name="com.example.itm_proyectofinal.vendedor.pedidos.PedidosFragment"
         android:label="Pedidos"
         tools:layout="@layout/fragment_pedidos" />
     <fragment
-        android:id="@+id/nav_producto"
+        android:id="@+id/nav_productos"
         android:name="com.example.itm_proyectofinal.vendedor.productos.ProductosFragment"
         android:label="Productos"
         tools:layout="@layout/fragment_productos_vendedor" />
 
 
     <fragment
-        android:id="@+id/nav_cuentavendedor"
+        android:id="@+id/nav_micuenta_vendedor"
         android:name="com.example.itm_proyectofinal.vendedor.micuentavendedor.CuentaVendedorFragment"
         android:label="Mi Cuenta"
         tools:layout="@layout/fragment_micuenta_vendedor" />

@@ -52,7 +52,7 @@ public class HomeAgricultorActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);// buscar en content_main_vendedor (fondo)
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_pedido, R.id.nav_producto, R.id.nav_cuentavendedor,R.id.nav_agregar_producto)
+                R.id.nav_home, R.id.nav_pedidos, R.id.nav_productos, R.id.nav_micuenta_vendedor,R.id.nav_agregar_producto)
                 .setDrawerLayout(drawer)
                 .build();
 
